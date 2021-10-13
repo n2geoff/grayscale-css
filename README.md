@@ -8,39 +8,28 @@ Use at of the box or set a single custom `theme` color and watch the styles chan
 
 Extend with minimal styles to create your final theme/design.
 
-All-in, this package is **only TBD!**
-
-
-
-## Check it Out
-
-- TBD
-
-
+All-in, this package is **only 2kb gzipped!**
 
 ### Features
 
-- Tiny
-- Classless, include and go
+- Tiny, 220 lines, 13 vars, 1 class, 4kb minified, 2kb gzipped
+- Classless
 - Single `.grid` class utility helper for auto-adjusting layout solution
-- Customizable: theme, font, border-radius, line-height, element spacing
+- Customizable theme, font, border-radius, line-height, element spacing
 - Extendable, its classless -- add your own classes!
 - Pure CSS3
 
 > WARNING: only supports CSS3 ever-green browsers, no IE here ;)
 
 
+## Check it Out
 
-## Getting Started
+**Scales CSS** builds dynamic themes based on a single color.  the default theme is based on `steelblue` , and has a `dark` and `light` variant (*default dark*)
 
-Latest minified build is available in the `dist`/ folder. or you can
-
-- TBD
-
-To see what it looks like, see
-
-- TBD
-
+<div style="display: flex">
+  <img src="example/img/steelblue-dark.png" width="400">
+  <img src="example/img/steelblue-light.png" width="400">
+</div>
 
 
 ## Develop
@@ -49,7 +38,13 @@ clone repository and... TBD
 
 
 
-## TODOs
+## LICENSE
+
+- [MIT](LICENSE)
+
+
+
+## TODO
 
 - Get Download to work with custom dist download
 
