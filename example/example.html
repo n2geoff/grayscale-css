@@ -24,26 +24,26 @@
             <section>
                 <section class="grid">
                     <div>
-                        <div class="box" style="background: var(--foreground);">&nbsp;</div>
-                        <div class="box" style="background: var(--theme-dark);">&nbsp;</div>
+                        <div class="box" style="background: var(--fg);">&nbsp;</div>
+                        <div class="box" style="background: var(--dark);">&nbsp;</div>
                         <div class="box" style="background: var(--theme);">&nbsp;</div>
-                        <div class="box" style="background: var(--theme-light);">&nbsp;</div>
-                        <div class="box" style="background: var(--muted);">&nbsp;</div>
+                        <div class="box" style="background: var(--light);">&nbsp;</div>
+                        <div class="box" style="background: var(--gray);">&nbsp;</div>
                     </div>
                     <div style="text-align: center;">
-                        <div class="box" style="background: var(--background); color: var(--theme)">
+                        <div class="box" style="background: var(--bg); color: var(--theme)">
                             SCALES
                         </div>
-                        <div class="box" style="background:var(--muted); padding: 0 .5em 0 .5em;">CSS</div>
+                        <div class="box" style="background:var(--gray); padding: 0 .5em 0 .5em;">CSS</div>
                     </div>
                     <div style="text-align: right;">
-                        <em>A Minimalist Dream of CSS</em>
+                        <em>Minimalist CSS Dream</em>
                     </div>
                 </section>
                 <article>
                     <section>
                         <h2>Customize CSS</h2>
-                        <form id="settings" name="settings" style="background: var(--background); padding: var(--spacing);">
+                        <form id="settings" name="settings" style="background: var(--bg); padding: 1rem;">
                             <div>
                                 <label for="theme">Theme Color <small>(default: steelblue)</small></label>
                                 <span style="float: right">
@@ -57,7 +57,7 @@
                             <div class="grid">
                                 <div>
                                     <label for="font">Font Family</label>
-                                    <input type="text" id="font" name="font" value="sans-sarif, Roboto">
+                                    <input type="text" id="font" name="font" value="Arial, Helvetica, san-serif">
                                 </div>
                             </div>
                             <div class="grid">
@@ -77,7 +77,7 @@
                                 </div>
                                 <div>
                                     <label for="spacing">Element Spacing</label>
-                                    <input type="range" id="spacing" name="spacing" min="0" max="4" step="0.05" value="1.5" list="tickmarks">
+                                    <input type="range" id="spacing" name="spacing" min="0" max="4" step="0.05" value="1" list="tickmarks">
                                 </div>
                             </div>
                             <div>

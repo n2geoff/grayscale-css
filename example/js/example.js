@@ -71,14 +71,14 @@ function update() {
     const style = document.createElement('style');
     style.innerHTML = `
         :root {
-            --theme-h: ${hsl.h};
-            --theme-s: ${hsl.s}%;
-            --theme-l: ${hsl.l}%;
-            --font-family: ${form.elements['font'].value};
-            --font-size: ${form.elements['size'].value}px;
-            --spacing: ${form.elements['spacing'].value}rem;
-            --line-height: ${form.elements['line'].value};
-            --border-radius: ${form.elements['radius'].value}rem;
+            --Hsl: ${hsl.h};
+            --hSl: ${hsl.s}%;
+            --hsL: ${hsl.l}%;
+            --font: ${form.elements['font'].value};
+            --size: ${form.elements['size'].value}px;
+            --space: ${form.elements['spacing'].value}rem;
+            --line: ${form.elements['line'].value};
+            --radius: ${form.elements['radius'].value}rem;
         }
     `;
 
