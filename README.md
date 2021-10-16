@@ -6,7 +6,7 @@ Grayscale is a tiny-dynamic-classless css stylesheet designed for rapid prototyp
 
 **CHANGE A SINGLE COLOR** and **REDEFINE YOUR ENTIRE THEME**, complete with *light* and *dark* modes.
 
-It maybe `classless`, but it oozes style that you can [extend](src/extras)! 
+It *may* be `classless`, but it *oozes* with an [extendable](src/extras) style that just rocks!! 
 
 All in **2kb gzipped!**
 
