@@ -1,7 +1,8 @@
 ///////////////////////////////////////////////
-// Tweak Example Settings
+// Grayscale Theme Builder
 ///////////////////////////////////////////////
 
+// query helper
 const $ = document.querySelector.bind(document);
 
 function HEXToRGB(hex) {
@@ -62,12 +63,15 @@ function RGBToHSL(r,g,b) {
     };
 }
 
-function update() {
+// refresh current page theme
+function refresh() {
     const form = $('#settings');
 
+    // convert hex-to-rbg-to-hsl
     const rgb = HEXToRGB(form.elements['theme'].value);
     const hsl = RGBToHSL(rgb.r, rgb.g, rgb.b);
 
+    // build theme string
     const theme = String(`
         :root {
             --Hsl: ${hsl.h};
@@ -80,11 +84,13 @@ function update() {
             --radius: ${form.elements['radius'].value}rem;
         }`).replace(/\s/g, '');
 
+    // override :root to update page theme
     $('#dynamic').innerHTML = theme;
 
     return theme;
 }
 
+// download custom grayscaled theme
 function download(css) {
     const filename = `grayscaled.css`;
 
@@ -95,25 +101,34 @@ function download(css) {
     el.click();
 }
 
+// page download button
 $('input[type="submit"]').addEventListener('click', (e) => {
     e.preventDefault();
 
-    const theme = update();
+    // get current theme
+    const theme = refresh();
 
-    function css_text(x) { 
+    // get style rules as text
+    function getText(x) {
+        // exclude :root theme vars
         if(x.selectorText !== ':root') {
             return x.cssText; 
         }
     }
 
-    var css = document.getElementById('grayscale');
-    var content = Array.prototype.map.call(css.sheet.cssRules, css_text).join('\n');
+    // get grayscale stylesheet as dom object
+    var css = $('#grayscale');
 
-    const grayscaled = `${theme}${content}`.replace(/\s/g, '');
+    // convert stylesheet dom object to string
+    var style = Array.prototype.map.call(css.sheet.cssRules, getText).join('\n');
+
+    // build custom grayscaled theme & minify
+    const grayscaled = `${theme}${style}`.replace(/\s/g, '');
 
     download(grayscaled);
 });
 
+// toggle light / dark mode
 $('#mode').addEventListener('click', () => {
     const attr = $('html').getAttribute('data-theme');
 
@@ -124,9 +139,10 @@ $('#mode').addEventListener('click', () => {
     }
 });
 
-$('#radius').addEventListener('click', update);
-$('#font').addEventListener('click', update);
-$('#size').addEventListener('click', update);
-$('#spacing').addEventListener('click', update);
-$('#line').addEventListener('click', update);
-$('#theme').addEventListener('change', update);
+// refresh page theme on changes
+$('#radius').addEventListener('click', refresh);
+$('#font').addEventListener('click', refresh);
+$('#size').addEventListener('click', refresh);
+$('#spacing').addEventListener('click', refresh);
+$('#line').addEventListener('click', refresh);
+$('#theme').addEventListener('change', refresh);
