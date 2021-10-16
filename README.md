@@ -56,8 +56,4 @@ Still have a bunch of tiny tweaks and extras to build, but th
 
 - ability for an accent color (defaults to theme)
 
-- Tweak `code`, `pre`, `kbd`
-
-- input highlight on focus
-
 - documentation around `main` , `article`, `section` tags
