@@ -1,0 +1,14 @@
+.hero {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+    padding: 0
+}
