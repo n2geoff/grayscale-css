@@ -167,17 +167,11 @@ input[type="radio"] {
     height: calc(var(--size) * .8);
 }
 
-input[type="submit"] {
-    background-color: var(--theme);
-    color: var(--bg);
-    font-size: var(--size);
-    height: calc(var(--size) * 3);
-    padding: 0;
-    margin: var(--space) 0;
-    cursor: pointer;
-}
-
-button, select, textarea {
+button,
+input[type="submit"],
+input[type="reset"], 
+select,
+textarea {
     display: inline-block;
     outline: none;
     font-family: var(--font);
@@ -191,6 +185,12 @@ button, select, textarea {
     padding: 0 var(--space);
     margin-bottom: var(--space);
     cursor: pointer;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: var(--theme);
+    color: var(--bg);
 }
 
 select {
