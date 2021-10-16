@@ -1,0 +1,24 @@
+{
+  "name": "grayscale",
+  "version": "0.8.0",
+  "description": "css for minimalists",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n2geoff/grayscale.git"
+  },
+  "keywords": [
+    "css",
+    "stylesheet",
+    "theme-builder",
+    "classless"
+  ],
+  "author": "Geoff Doty",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/n2geoff/grayscale/issues"
+  },
+  "homepage": "https://github.com/n2geoff/grayscale#readme"
+}
