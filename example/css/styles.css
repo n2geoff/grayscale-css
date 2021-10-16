@@ -1,0 +1,14 @@
+html {
+    min-width: 540px
+}
+
+.box {
+    height: 1.5em;
+    min-width: 1.5em;
+    line-height: 1.5em;
+    margin: 1px;
+    display: inline-block;
+    font-weight: bold;
+    letter-spacing: .2em;
+    color: #FAFAFA;
+}

@@ -68,8 +68,7 @@ function update() {
     const rgb = HEXToRGB(form.elements['theme'].value);
     const hsl = RGBToHSL(rgb.r, rgb.g, rgb.b);
 
-    const style = document.createElement('style');
-    style.innerHTML = `
+    const theme = String(`
         :root {
             --Hsl: ${hsl.h};
             --hSl: ${hsl.s}%;
@@ -79,8 +78,12 @@ function update() {
             --space: ${form.elements['spacing'].value}rem;
             --line: ${form.elements['line'].value};
             --radius: ${form.elements['radius'].value}rem;
-        }
-    `;
+        }`).replace(/\s/g, '');
+
+    $('#dynamic').innerHTML = theme;
+
+    return theme;
+}
 
     $('head').appendChild(style);
 }
