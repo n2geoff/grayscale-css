@@ -148,7 +148,7 @@ input {
     height: calc(var(--size) * 3);
     border: 1px solid var(--theme);
     border-radius: var(--radius);
-    padding: var(--space);
+    padding: clamp(.5rem, var(--space), 2rem);
     margin-bottom: var(--space);
     margin-right: var(--space);
 }
