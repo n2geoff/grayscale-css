@@ -23,12 +23,18 @@ All in **2kb gzipped!**
 
 ## Check it Out
 
+- [Theme Builder](https://n2geoff.github.io)
+
 While **Grayscale CSS** can generate a dynamic theme based on A SINGLE COLOR, it defaults to a beautiful theme is based on `steelblue` , and of course that comes in both `light` and `dark` variants
+
+---
 
 <div style="display: flex">
   <img src="example/img/steelblue-dark.png" width="400">
   <img src="example/img/steelblue-light.png" width="400">
 </div>
+
+---
 
 Add `data-theme="dark"` to the `html` tag for a taste of the dark side
 
