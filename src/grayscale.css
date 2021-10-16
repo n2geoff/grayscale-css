@@ -3,9 +3,7 @@
     --Hsl: 207;
     --hSl: 50%;
     --hsL: 50%;
-
     --theme: hsl(var(--Hsl), var(--hSl), var(--hsL));
-
     --font: Arial, Helvetica, san-serif;
     --line: 1.5;
     --weight: 400;
@@ -18,6 +16,7 @@
     --light: hsl(var(--Hsl), var(--hSl), calc(var(--hsL) + 35%));
     --dark: hsl(var(--Hsl), var(--hSl), calc(var(--hsL) - 35%));
     --gray: hsl(var(--Hsl), 15%, 75%);
+    --hint: hsl(var(--Hsl), 35%, 70%);
     --bg: hsl(var(--Hsl), 0%, 95%);
     --fg: hsl(var(--Hsl), 0%, 5%);
 }
@@ -26,6 +25,7 @@
     --light: hsl(var(--Hsl), var(--hSl), calc(var(--hsL) - 35%));
     --dark: hsl(var(--Hsl), var(--hSl), calc(var(--hsL) + 35%));
     --gray: hsl(var(--Hsl), 15%, 15%);
+    --hint: hsl(var(--Hsl), 35%, 30%);
     --bg: hsl(var(--Hsl), 50%, 5%);
     --fg: hsl(var(--Hsl), 20%, 90%);
 }
@@ -43,6 +43,14 @@ html,body {
     line-height: var(--line);
     box-sizing: border-box;
     padding: 0;
+}
+
+::placeholder {
+    color: var(--hint);
+}
+
+:disabled::placeholder {
+    color: hsl(0, 0%, 50%);
 }
 
 img,embed,iframe,object,audio,video {
