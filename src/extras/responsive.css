@@ -1,0 +1,6 @@
+/* Media Queries */
+
+/* mobile */
+@media(max-width: 576px) {
+    html {font-size: calc(var(--size) * .75px)}
+}

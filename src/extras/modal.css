@@ -1,0 +1,25 @@
+.modal {
+    position: fixed;
+    background: rgba(0, 0, 0, .6);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: var(--space);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    display: flex;
+    width: 28rem;
+    max-width: 80vw;
+    height: 20rem;
+    background: var(--bg);
+}
