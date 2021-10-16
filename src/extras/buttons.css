@@ -1,0 +1,39 @@
+/* Button Extras */
+
+button:hover,
+button[type="submit"]:hover,
+button[type="reset"]:hover,
+button[type="button"]:hover {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000', GradientType=0);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.10)));
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.10));
+}
+
+button:active,
+button[type="submit"]:active,
+button[type="reset"]:active,
+button[type="button"]:active {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.20) inset;
+    border-color: var(--bg);
+    color: inherit;
+}
+
+button:focus,
+button[type="submit"]:focus,
+button[type="reset"]:focus {
+    outline: 0;
+    color: inherit;
+}
+
+button.disabled,
+button.disabled:hover,
+button.disabled:active,
+button.disabled:focus {
+    border: 1px solid var(--fg);
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    filter: alpha(opacity=40);
+    opacity: 0.40;
+    cursor: not-allowed;
+    box-shadow: none;
+}
