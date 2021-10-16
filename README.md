@@ -23,7 +23,8 @@ All in **2kb gzipped!**
 
 ## Check it Out
 
-- [Theme Builder](https://n2geoff.github.io/grayscale)
+- [Theme Builder](https://n2geoff.github.io/grayscale/theme.html)
+- [Documentation](https://n2geoff.github.io/grayscale)
 
 While **Grayscale CSS** can generate a dynamic theme based on A SINGLE COLOR, it defaults to a beautiful theme is based on `steelblue` , and of course that comes in both `light` and `dark` variants
 
