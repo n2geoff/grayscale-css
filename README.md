@@ -1,41 +1,36 @@
-# Scales CSS
+# Grayscale CSS
 
-> A Minimalist Dream of CSS
+> CSS For Minimalists
 
-Scales CSS provides a minimalist approach to styling, placing layout in the fore-front, removing excess distractions, allowing  developers to prototype designs rapidly -- add flair later.
+Grayscale is a tiny-dynamic-classless css stylesheet designed for rapid prototyping. Use AS-IS or... 
 
-Use at of the box or set a single custom `theme` color and watch the styles change dynamically.
+**CHANGE A SINGLE COLOR** and **REDEFINE YOUR ENTIRE THEME**, complete with *light* and *dark* modes.
 
-Extend with minimal styles to create your final theme/design.
+It maybe `classless`, but it oozes style that you can [extend](src/extras)! 
 
-All-in, this package is **only 2kb gzipped!**
+All in **2kb gzipped!**
 
 ### Features
 
-- Tiny, 220 lines, 13 vars, 1 class, 4kb minified, 2kb gzipped
-- Classless
-- Single `.grid` class utility helper for auto-adjusting layout solution
-- Customizable theme, font, border-radius, line-height, element spacing
-- Extendable, its classless -- add your own classes!
-- Pure CSS3
+- Tiny, 2kb
+- Classless 
+- Dynamic, 15 Custom CSS Vars
+- Pure CSS Theme Generation
+- Includes Light and Dark Themes
 
-> WARNING: only supports CSS3 ever-green browsers, no IE here ;)
+> WARNING: ever-green browsers need only apply ;)
 
 
 ## Check it Out
 
-**Scales CSS** builds dynamic themes based on a single color.  the default theme is based on `steelblue` , and has a `dark` and `light` variant (*default dark*)
+While **Grayscale CSS** can generate a dynamic theme based on A SINGLE COLOR, it defaults to a beautiful theme is based on `steelblue` , and of course that comes in both `light` and `dark` variants
 
 <div style="display: flex">
   <img src="example/img/steelblue-dark.png" width="400">
   <img src="example/img/steelblue-light.png" width="400">
 </div>
 
-
-## Develop
-
-clone repository and... TBD
-
+Add `data-theme="dark"` to the `html` tag for a taste of the dark side
 
 
 ## LICENSE
@@ -43,24 +38,20 @@ clone repository and... TBD
 - [MIT](LICENSE)
 
 
-
 ## TODO
 
-- Get Download to work with custom dist download
+Still have a bunch of tiny tweaks and extras to build, but th
 
-- clamp themes, saturation and lightness above 70, or below 30 just wont work
+- clamp themes, saturation and lightness above 80, or below 20 just wont work
 
 - add theme to parts, checkbox, radio button, range sliders ect...
 
 - styles for `details` & `summary`
 
-- add accent color (auto or manual)
+- ability for an accent color (defaults to theme)
 
 - Tweak `code`, `pre`, `kbd`
 
 - input highlight on focus
 
-- muted color -- might be ok
-
 - documentation around `main` , `article`, `section` tags
-
