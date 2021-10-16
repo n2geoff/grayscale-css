@@ -85,13 +85,33 @@ function update() {
     return theme;
 }
 
-    $('head').appendChild(style);
+function download(css) {
+    const filename = `grayscaled.css`;
+
+    let el = document.createElement('a');
+    el.setAttribute('href', 'data:application/json;charset=utf-8,' + encodeURIComponent(css));
+    el.setAttribute('download', filename);
+    el.style.display = 'none';
+    el.click();
 }
 
 $('input[type="submit"]').addEventListener('click', (e) => {
     e.preventDefault();
 
-    alert('Nothing Here Yet!');
+    const theme = update();
+
+    function css_text(x) { 
+        if(x.selectorText !== ':root') {
+            return x.cssText; 
+        }
+    }
+
+    var css = document.getElementById('grayscale');
+    var content = Array.prototype.map.call(css.sheet.cssRules, css_text).join('\n');
+
+    const grayscaled = `${theme}${content}`.replace(/\s/g, '');
+
+    download(grayscaled);
 });
 
 $('#mode').addEventListener('click', () => {
