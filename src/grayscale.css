@@ -91,16 +91,19 @@ blockquote {
 
 pre, code, kbd {
     font-family: monospace;
-    display: inline-block;
     white-space: pre;
-    margin: 0;
-    padding: 0;
 }
 
 code {
     margin: 0 calc(var(--space) / 4);
     padding: 0 calc(var(--space) / 4);
     background: var(--bg);
+}
+
+pre>code {
+    display: block;
+    padding: var(--space);
+    width: 100%;
 }
 
 hr {
