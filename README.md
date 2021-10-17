@@ -23,7 +23,7 @@ All in **2kb gzipped!**
 
 ## Check it Out
 
-- [Theme Builder](https://n2geoff.github.io/grayscale/theme.html)
+- [Theme Builder](https://n2geoff.github.io/grayscale/theme/)
 - [Documentation](https://n2geoff.github.io/grayscale)
 
 While **Grayscale CSS** can generate a dynamic theme based on A SINGLE COLOR, it defaults to a beautiful theme is based on `steelblue` , and of course that comes in both `light` and `dark` variants
@@ -31,8 +31,8 @@ While **Grayscale CSS** can generate a dynamic theme based on A SINGLE COLOR, it
 ---
 
 <div style="display: flex">
-  <img src="example/img/steelblue-dark.png" width="400">
-  <img src="example/img/steelblue-light.png" width="400">
+  <img src="https://n2geoff.github.io/grayscale/img/steelblue-dark.png" width="400">
+  <img src="https://n2geoff.github.io/grayscale/img/steelblue-light.png" width="400">
 </div>
 
 ---
@@ -47,14 +47,14 @@ Add `data-theme="dark"` to the `html` tag for a taste of the dark side
 
 ## TODO
 
-Still have a bunch of tiny tweaks and extras to build, but th
+While many of the core ideas are here to keep it as small as possible, there are plenty of tweaks and extras to build to hit that perfect sweat spot
 
-- clamp themes, saturation and lightness above 80, or below 20 just wont work
+- some theme colors need sat/light `clamp`ed so colors dont clobber eachother
 
-- add theme to parts, checkbox, radio button, range sliders ect...
+- theme designs for normally uncustomizable parts:checkbox, radio button, range sliders ect...
 
-- styles for `details` & `summary`
+- Im a fan of `details` & `summary`, needs to be included
 
-- ability for an accent color (defaults to theme)
+- toggleable accent color (defaults to theme)
 
-- documentation around `main` , `article`, `section` tags
+- documentation around how various layout and designs can be created with just regualar html tags; like `main` , `article`, `section`, or the absence of them
