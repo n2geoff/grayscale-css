@@ -111,14 +111,17 @@ blockquote {
     padding: var(--space);
 }
 
-pre>code,code, kbd {
-    color: var(--light);
-    background: var(--dark);
+code, kbd {
+    color: var(--light) !important;
+    background: var(--dark) !important;
     margin: 0 calc(var(--space) / 4);
     padding: 0 calc(var(--space) / 4);
 }
 
 pre>code {
+    color: var(--light);
+    background: var(--dark);
+    display: inline-block;
     padding: var(--space);
     width: 100%;
 }
