@@ -1,4 +1,4 @@
-/* Grayscale CSS v:0.8.4 | MIT LICENSE | https://github.com/n2geoff/grayscale */
+/* Grayscale CSS v:0.8.5 | MIT LICENSE | https://github.com/n2geoff/grayscale */
 :root {
     --Hsl: 207;
     --hSl: 50%;
@@ -106,7 +106,7 @@ a:hover {
 blockquote {
     margin: var(--space) 0;
     border-left: calc(var(--space) / 2) solid var(--hint);
-    color: var(--dark);
+    color: var(--hint);
     background: var(--dark);
     padding: var(--space);
 }
