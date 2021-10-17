@@ -31,8 +31,8 @@ While **Grayscale CSS** can generate a dynamic theme based on A SINGLE COLOR, it
 ---
 
 <div style="display: flex">
-  <img src="https://n2geoff.github.io/grayscale/img/steelblue-dark.png" width="400">
-  <img src="https://n2geoff.github.io/grayscale/img/steelblue-light.png" width="400">
+  <img src="https://n2geoff.github.io/grayscale/img/steelblue-dark.png" width="344">
+  <img src="https://n2geoff.github.io/grayscale/img/steelblue-light.png" width="344">
 </div>
 
 ---
