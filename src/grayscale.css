@@ -222,7 +222,7 @@ input[type="submit"],input[type="reset"] {
 select {
     background: var(--bg) no-repeat 100%;
     color: var(--fg);
-    padding: clamp(.5rem, var(--space), 2rem);
+    padding: 0 clamp(.5rem, var(--space), 2rem);
     appearance: none;
     background-size: 1ex;
     background-origin: content-box;
