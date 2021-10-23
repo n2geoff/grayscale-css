@@ -75,7 +75,7 @@ ul,ol,li {
 }
 
 table {
-    background-color: var(--bg);
+    background: var(--bg);
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
@@ -155,7 +155,7 @@ section {
 
 article {
     padding: var(--space);
-    background-color: var(--light);
+    background: var(--light);
 }
 
 label {
@@ -171,7 +171,7 @@ input {
     outline: none;
     box-sizing: border-box;
     font-size: var(--size);
-    background-color: var(--bg);
+    background: var(--bg);
     color: var(--fg);
     width: 100%;
     height: calc(var(--size) * 3);
