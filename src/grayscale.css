@@ -1,4 +1,4 @@
-/* Grayscale CSS v:0.8.5 | MIT LICENSE | https://github.com/n2geoff/grayscale */
+/* Grayscale CSS v:0.9.0 | MIT LICENSE | https://github.com/n2geoff/grayscale */
 :root {
     --Hsl: 207;
     --hSl: 50%;
@@ -13,18 +13,18 @@
     --space: 1rem;
 }
 
-[data-theme="light"],:root:not([data-theme="dark"]) {
-    --light: hsl(var(--Hsl), var(--hSl), calc(var(--hsL) + 35%));
-    --dark: hsl(var(--Hsl), var(--hSl), calc(var(--hsL) - 35%));
+:root:not([data-theme=dark]),[data-theme=light] {
+    --light: hsl(var(--Hsl), clamp(15%, var(--hSl), 85%), clamp(15%, calc(var(--hsL) + 35%), 85%));
+    --dark: hsl(var(--Hsl), clamp(15%, var(--hSl), 85%), clamp(15%, calc(var(--hsL) - 35%), 85%));
     --gray: hsl(var(--Hsl), 25%, 75%);
     --hint: hsl(var(--Hsl), 35%, 70%);
     --bg: hsl(var(--Hsl), 0%, 95%);
     --fg: hsl(var(--Hsl), 0%, 5%);
 }
 
-[data-theme="dark"] {
-    --light: hsl(var(--Hsl), var(--hSl), calc(var(--hsL) - 35%));
-    --dark: hsl(var(--Hsl), var(--hSl), calc(var(--hsL) + 35%));
+[data-theme=dark] {
+    --light: hsl(var(--Hsl), clamp(15%, var(--hSl), 85%), clamp(15%, calc(var(--hsL) - 35%), 85%));
+    --dark: hsl(var(--Hsl), clamp(15%, var(--hSl), 85%), clamp(15%, calc(var(--hsL) + 35%), 85%));
     --gray: hsl(var(--Hsl), 25%, 25%);
     --hint: hsl(var(--Hsl), 35%, 20%);
     --bg: hsl(var(--Hsl), 50%, 5%);
