@@ -2,18 +2,16 @@
 
 > CSS For Minimalists
 
-Grayscale is a tiny-dynamic-classless css stylesheet designed for rapid prototyping. Use AS-IS or... 
+Grayscale is a tiny-dynamic-classless css stylesheet designed for rapid prototyping and **LIVE** dynamic style alterations. **CHANGE A SINGLE COLOR** to **REDEFINE YOUR ENTIRE THEME**, complete with *light* and *dark* modes.
 
-**CHANGE A SINGLE COLOR** and **REDEFINE YOUR ENTIRE THEME**, complete with *light* and *dark* modes.
-
-It *may* be `classless`, but it *oozes* with an [extendable](src/extras) style that just rocks!! 
+It *may* be `classless`, but it *oozes* [style](src/extras)
 
 All in **2kb gzipped!**
 
 ### Features
 
 - Tiny, 2kb
-- Classless 
+- Classless
 - Dynamic, 15 Custom CSS Vars
 - Pure CSS Theme Generation
 - Includes Light and Dark Themes
@@ -37,7 +35,7 @@ While **Grayscale CSS** can generate a dynamic theme based on A SINGLE COLOR, it
 
 ---
 
-Add `data-theme="dark"` to the `html` tag for a taste of the dark side
+> Add `data-theme="dark"` to the `html` tag for a taste of the dark side
 
 
 ## LICENSE
@@ -54,7 +52,3 @@ While many of the core ideas are here to keep it as small as possible, there are
 - theme designs for normally uncustomizable parts:checkbox, radio button, range sliders ect...
 
 - Im a fan of `details` & `summary`, needs to be included
-
-- toggleable accent color (defaults to theme)
-
-- documentation around how various layout and designs can be created with just regualar html tags; like `main` , `article`, `section`, or the absence of them
