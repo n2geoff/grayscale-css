@@ -209,16 +209,39 @@ button,input[type="submit"],input[type="reset"],select,textarea {
     width: 100%;
     border: 1px solid var(--theme);
     color: var(--theme);
-    background-color: var(--bg);
+    background: var(--bg);
     border-radius: var(--radius);
     padding: 0 var(--space);
     margin-bottom: var(--space);
     cursor: pointer;
 }
 
-input[type="submit"],input[type="reset"] {
-    background-color: var(--theme);
-    color: var(--bg);
+input[type="submit"],
+input[type="reset"] {
+    background: var(--theme);
+    color: var(--fg);
+    border: none;
+}
+
+input[type="reset"] {
+    color: var(--fg);
+    background: var(--bg);
+}
+
+button {
+    background: var(--gray);
+    border: none;
+    color: var(--fg);
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background: var(--fg);
+    border-bottom: 1px solid var(--bg);
+    color: var(--theme);
+    font-weight: bold;
+    letter-spacing: .1rem;
 }
 
 select {
