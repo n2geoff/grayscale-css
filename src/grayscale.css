@@ -26,7 +26,7 @@
     --light: hsl(var(--Hsl), var(--hSl), calc(var(--hsL) - 35%));
     --dark: hsl(var(--Hsl), var(--hSl), calc(var(--hsL) + 35%));
     --gray: hsl(var(--Hsl), 25%, 25%);
-    --hint: hsl(var(--Hsl), 35%, 30%);
+    --hint: hsl(var(--Hsl), 35%, 20%);
     --bg: hsl(var(--Hsl), 50%, 5%);
     --fg: hsl(var(--Hsl), 20%, 90%);
 }
