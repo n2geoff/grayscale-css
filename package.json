@@ -1,13 +1,13 @@
 {
   "name": "grayscale-css",
-  "version": "0.8.5",
+  "version": "0.9.0",
   "description": "css for minimalists",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx csso .\\src\\grayscale.css --comments first-exclamation --output .\\dist\\grayscale.min.css -s .\\dist\\grayscale.map"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/n2geoff/grayscale.git"
+    "url": "git+https://github.com/n2geoff/grayscale-css.git"
   },
   "keywords": [
     "css",
@@ -19,7 +19,10 @@
   "main": "dist/grayscale.min.css",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/n2geoff/grayscale/issues"
+    "url": "https://github.com/n2geoff/grayscale-css/issues"
   },
-  "homepage": "https://n2geoff.github.io/grayscale"
+  "homepage": "https://n2geoff.github.io/grayscale",
+  "devDependencies": {
+    "csso-cli": "^3.0.0"
+  }
 }
